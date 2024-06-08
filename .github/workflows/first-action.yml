@@ -6,5 +6,10 @@ jobs:
     steps: 
       - name: print greeting 
         run: echo "Hello world"
+      - name: running multi line shell script
+        run: |
+          echo " this is command 1"
+          echo "this is command 2"
+          echo "this is command 3"
       - name: done by
         run: echo "Sone - bye"
